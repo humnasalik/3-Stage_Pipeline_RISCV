@@ -6,7 +6,7 @@ The design focuses on **clarity, correctness, and modular structure**, making it
 
 ---
 
-## 📌 Project Summary
+##  Project Summary
 
 The processor implements a simplified subset of the **RISC-V ISA** and follows a clean 3-stage pipeline:
 
@@ -18,7 +18,7 @@ The design demonstrates correct instruction flow, centralized control-signal gen
 
 ---
 
-## 🏗️ Architecture Overview
+##  Architecture Overview
 
 - **IF Stage:**  
   Fetches instructions, updates the program counter, and handles basic control-flow redirection.
@@ -31,7 +31,7 @@ The design demonstrates correct instruction flow, centralized control-signal gen
 
 ---
 
-## 🔁 Pipeline Registers
+##  Pipeline Registers
 
 The design uses dedicated pipeline registers to maintain timing and instruction flow:
 
@@ -42,7 +42,7 @@ The program counter and instruction word are propagated across stages to support
 
 ---
 
-## 🧩 Key Features
+##  Key Features
 
 - Modular SystemVerilog design  
 - Centralized control unit  
@@ -54,7 +54,7 @@ The program counter and instruction word are propagated across stages to support
 
 ---
 
-## ⚠️ Hazard Handling
+##  Hazard Handling
 
 - Control hazards are resolved by redirecting the program counter after branch or jump evaluation  
 - Branch prediction and speculative execution are not implemented  
@@ -64,7 +64,7 @@ This keeps the design simple and predictable for learning purposes.
 
 ---
 
-## 🧱 Modules
+##  Modules
 
 - Program counter  
 - Instruction memory  
@@ -79,7 +79,7 @@ This keeps the design simple and predictable for learning purposes.
 
 ---
 
-## 🛠️ Tools Used
+##  Tools Used
 
 - VS Code – coding  
 - ModelSim / Questa – simulation  
